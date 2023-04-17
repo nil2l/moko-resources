@@ -56,6 +56,5 @@ class AppleStringsGenerator(
     private fun convertXmlStringToAppleLocalization(input: String): String {
         val xmlDecoded = StringEscapeUtils.unescapeXml(input)
         return xmlDecoded.replace("\n", "\\n")
-            .replace("\"", "\\\"")
     }
 }
